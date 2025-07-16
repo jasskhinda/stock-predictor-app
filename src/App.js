@@ -36,6 +36,34 @@ function App() {
           predictions={predictions}
         />
       </main>
+      
+      <footer className="App-footer">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h3>AI Stock Predictor</h3>
+            <p>Advanced Neural Network Prediction Engine</p>
+          </div>
+          
+          <div className="footer-section">
+            <h4>Contact</h4>
+            <p>📧 info@jasskhinda.com</p>
+            <p>🌐 jasskhinda.com</p>
+          </div>
+          
+          <div className="footer-section">
+            <h4>Technology</h4>
+            <p>Built with React.js & Brain.js</p>
+            <p>Powered by Neural Networks</p>
+          </div>
+        </div>
+        
+        <div className="footer-bottom">
+          <p>&copy; 2025 Jass Khinda. All rights reserved.</p>
+          <p className="footer-disclaimer">
+            This application is for educational purposes only. Not financial advice.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
