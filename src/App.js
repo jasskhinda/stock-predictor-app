@@ -12,8 +12,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Stock Market Predictor</h1>
-        <p>Using Brain.js Neural Network</p>
+        <h1>📈 AI Stock Predictor</h1>
+        <p>Advanced Neural Network Prediction Engine</p>
+        <div className="stock-ticker">
+          <div className="ticker-content">
+            AAPL: $175.25 (+2.5%) • GOOGL: $138.75 (+1.2%) • MSFT: $342.10 (-0.3%) • TSLA: $248.50 (+5.7%) • AMZN: $145.80 (+0.9%)
+          </div>
+        </div>
       </header>
       
       <main className="App-main">
