@@ -1,0 +1,10 @@
+# Run these commands in terminal from the stock-predictor-app directory:
+
+cd /Volumes/C/CCT\ APPS/stock-predictor-app
+
+# Add your GitHub repository as remote (replace YOUR_GITHUB_USERNAME with your actual username)
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/stock-predictor-app.git
+
+# Push to GitHub
+git branch -M main
+git push -u origin main

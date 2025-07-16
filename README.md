@@ -44,7 +44,7 @@ The included dataset contains 55 historical data points from January to March 20
 
 1. Clone the repository:
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/jasskhinda/stock-predictor-app.git
 cd stock-predictor-app
 ```
 
@@ -87,7 +87,7 @@ Deployed on Vercel: [deployment-url]
 
 ## Author
 
-[Your Name]
+Jass Khinda
 
 ## License
 

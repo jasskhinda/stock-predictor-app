@@ -1,0 +1,26 @@
+ASSIGNMENT 4 - PART 1 SUBMISSION
+================================
+
+Student Name: [Your Name]
+Date: July 15, 2025
+
+1. GitHub Repository Link:
+   https://github.com/YOUR_GITHUB_USERNAME/stock-predictor-app
+
+2. Vercel Deployment Link:
+   https://stock-predictor-app-YOUR_USERNAME.vercel.app
+   (You'll get the exact URL after deployment)
+
+Implementation Details:
+- Functioning Brain.js prediction model ✓
+- Correct training and testing logic ✓
+- Clear code with comments ✓
+- 55 historical data points ✓
+- Responsive UI design ✓
+- Proper component structure ✓
+
+Technologies Used:
+- React.js
+- Brain.js (CDN)
+- Chart.js
+- CSS3
