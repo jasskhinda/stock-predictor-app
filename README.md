@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Stock Market Predictor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A stock market prediction application using Brain.js neural network for price forecasting.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Historical stock data visualization with 55 data points
+- Neural network model using Brain.js
+- Feedforward neural network with 2 hidden layers [10, 10]
+- Real-time prediction generation
+- Responsive design with Chart.js visualization
+- Clear distinction between historical and predicted values
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- Brain.js (Neural Network Library)
+- Chart.js & react-chartjs-2 (Data Visualization)
+- CSS3 (Responsive Design)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Model Architecture
 
-### `npm test`
+- **Type**: Feedforward Neural Network
+- **Hidden Layers**: [10, 10]
+- **Activation Function**: Sigmoid
+- **Learning Rate**: 0.01
+- **Training Iterations**: 2000
+- **Error Threshold**: 0.005
+- **Window Size**: 5 days (for time series prediction)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dataset Format
 
-### `npm run build`
+The application uses a JSON format for stock data:
+```javascript
+{
+  date: 'YYYY-MM-DD',
+  price: 123.45
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The included dataset contains 55 historical data points from January to March 2024.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Run Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```bash
+git clone [your-repo-url]
+cd stock-predictor-app
+```
 
-### `npm run eject`
+2. Install dependencies:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. View the historical stock data information
+2. Click "Train Model & Predict" to train the neural network
+3. The model will train on the historical data and generate 10 future predictions
+4. View the combined chart showing both historical (blue) and predicted (red dashed) prices
 
-## Learn More
+## Component Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `App.js` - Main application component
+- `components/DataInput.js` - Displays dataset information
+- `components/PredictionModel.js` - Neural network training and prediction logic
+- `components/StockChart.js` - Chart.js visualization component
+- `stockData.js` - Historical stock data
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Third-Party Libraries
 
-### Code Splitting
+- brain.js (v2.0.0-beta.23) - Neural network library
+- chart.js (v4.4.7) - Chart library
+- react-chartjs-2 (v5.2.0) - React wrapper for Chart.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment
 
-### Analyzing the Bundle Size
+Deployed on Vercel: [deployment-url]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
+[Your Name]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
